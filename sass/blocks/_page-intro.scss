@@ -1,0 +1,26 @@
+.page-intro {
+  margin-bottom: 30px;
+  background-color: $background-color;
+
+  &--index {
+    background-color: #fbfbfb;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+}
+
+.page-intro__title {
+  width: 320px;
+  margin: 0 auto;
+  padding: 70px 30px;
+  font-weight: bold;
+  font-size: 2.7rem;
+  line-height: 1.11;
+  text-align: center;
+  color: #000000;
+}
+
+.page-intro--index .page-intro__title {
+  padding-bottom: 120px;
+}

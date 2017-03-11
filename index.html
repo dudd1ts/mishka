@@ -2,19 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="">
-        <img src="http://placehold.it/86x35?text=mishka" width="86" height="35" alt="Интернет-магазин «Mishka»">
-      </a>
+      <div class="page-header__container">
+        <a class="page-header__logo" href="">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
+          <a class="btn-toggle  btn-toggle--close" href="">Главное меню</a>
+        </a>
+      </div>
       <nav class="main-nav main-nav--closed  main-nav--nojs">
-        <a class="main-nav__toggle" href="">Главное меню</a>
         <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active"><a href="">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
           <li class="main-nav__item  main-nav__item--search"><a href="">Поиск по сайту</a></li>
           <li class="main-nav__item  main-nav__item--basket"><a href="">Корзина: <span>пока пуста</span></a></li>
         </ul>
@@ -42,7 +46,7 @@
         <dd>15 см</dd>
       </dl>
       <div class="featured-product__img">
-        <img src="http://placehold.it/260x315" alt="Вязаные корзинки">
+        <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
       </div>
       <div class="featured-product__price">Цена: <span>990 руб.</span></div>
       <a class="btn" href="">Заказать</a>
@@ -77,36 +81,40 @@
     </section>
 
     <section class="contacts">
-      <h2 class="title title--small">Контакты</h2>
-      <address class="contacts__list">
-        <div class="contacts__item">
-          <div class="contacts__type">Email:</div>
-          <a class="email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </div>
-        <div class="contacts__item">
-          <div class="contacts__type">адрес:</div>
-          г. Санкт-Петербург,<br>
-          ул. Большая Конюшенная,<br>
-          д. 19/8, офис 101
-        </div>
-      </address>
+      <div class="contacts__container">
+        <h2 class="title title--small">Контакты</h2>
+        <address class="contacts__list">
+          <div class="contacts__item">
+            <div class="contacts__type">Email:</div>
+            <a class="email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__type">адрес:</div>
+            г. Санкт-Петербург,<br>
+            ул. Большая Конюшенная,<br>
+            д. 19/8, офис 101
+          </div>
+        </address>
+      </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1756.803725099347!2d30.321403024658427!3d59.93876643314854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1488633610766" width="320" height="457" allowfullscreen></iframe>
       <a class="btn" href="">Напишите нам</a>
     </section>
 
     <footer class="page-footer">
-      <div class="page-footer__social">
-        <div class="social-links">
-          <a class="social-link  social-link--instagram" href="">Мы в Инстаграме</a>
-          <a class="social-link  social-link--facebook" href="">Мы в Фейсбуке</a>
-          <a class="social-link  social-link--twitter" href="">Мы в Твиттере</a>
+      <div class="page-footer__container">
+        <div class="page-footer__social">
+          <div class="social-links">
+            <a class="social-link  social-link--instagram" href="">Мы в Инстаграме</a>
+            <a class="social-link  social-link--facebook" href="">Мы в Фейсбуке</a>
+            <a class="social-link  social-link--twitter" href="">Мы в Твиттере</a>
+          </div>
         </div>
+        <div class="copyright">Разработано <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></div>
       </div>
-      <div class="copyright">Разработано <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></div>
     </footer>
 
     <div class="modal modal--closed">
-      <h4 class="title title--center">Добавить в корзину</h3>
+      <h3 class="title title--center">Добавить в корзину</h3>
       <div class="size-form">
         <form action="https://echo.htmlacademy.ru/" method="post">
           <div class="size-form__legend">Выберите размер:</div>

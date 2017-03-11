@@ -2,19 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="">
-        <img src="http://placehold.it/86x35?text=mishka" width="86" height="35" alt="Интернет-магазин «Mishka»">
-      </a>
+      <div class="page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
+        </a>
+        <a class="btn-toggle  btn-toggle--close" href="">Главное меню</a>
+      </div>
       <nav class="main-nav main-nav--closed  main-nav--nojs">
-        <a class="main-nav__toggle" href="">Главное меню</a>
         <ul class="main-nav__list">
           <li class="main-nav__item  main-nav__item--active"><a href="">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
           <li class="main-nav__item  main-nav__item--search"><a href="">Поиск по сайту</a></li>
           <li class="main-nav__item  main-nav__item--basket"><a href="">Корзина: <span>пока пуста</span></a></li>
         </ul>
@@ -28,7 +32,7 @@
     <section class="catalog">
       <article class="product-card">
         <div class="product-card__img">
-          <a href=""><img src="http://placehold.it/260x315" alt="Зайчик-попрыгайчик"></a>
+          <a href=""><img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик"></a>
         </div>
         <div class="product-card__body">
           <h3 class="product-card__title"><a href="">Зайчик-попрыгайчик</a></h3>
@@ -41,7 +45,7 @@
       </article>
       <article class="product-card">
         <div class="product-card__img">
-          <a href=""><img src="http://placehold.it/260x315" alt="Корзинка для белья"></a>
+          <a href=""><img src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья"></a>
         </div>
         <div class="product-card__body">
           <h3 class="product-card__title"><a href="">Корзинка для белья</a></h3>
@@ -54,7 +58,7 @@
       </article>
       <article class="product-card">
         <div class="product-card__img">
-          <a href=""><img src="http://placehold.it/260x315" alt="Большая корзинка для игрушек"></a>
+          <a href=""><img src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек"></a>
         </div>
         <div class="product-card__body">
           <h3 class="product-card__title"><a href="">Большая корзинка для игрушек</a></h3>
@@ -65,30 +69,34 @@
           </div>
         </div>
       </article>
+      <article class="video-card">
+          <h3 class="video-card__title">Процесс производства</h3>
+          <div class="video">
+            <img src="img/video-mobile@1x.jpg" alt="">
+            <button class="video__play" type="button"></button>
+          </div>
+          <div class="video-card__body">
+            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+            <a class="btn" href="">Сделать заказ</a>
+          </div>
+      </article>
     </section>
 
-    <article class="video-card">
-        <h3 class="video-card__title">Процесс производства</h3>
-        <div class="video"><img src="http://placehold.it/260x150" alt=""></div>
-        <div class="video-card__body">
-          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-          <a class="btn" href="">Сделать заказ</a>
-        </div>
-    </article>
-
     <footer class="page-footer">
-      <div class="page-footer__social">
-        <div class="social-links">
-          <a class="social-link  social-link--instagram" href="">Мы в Инстаграме</a>
-          <a class="social-link  social-link--facebook" href="">Мы в Фейсбуке</a>
-          <a class="social-link  social-link--twitter" href="">Мы в Твиттере</a>
+      <div class="page-footer__container">
+        <div class="page-footer__social">
+          <div class="social-links">
+            <a class="social-link  social-link--instagram" href="">Мы в Инстаграме</a>
+            <a class="social-link  social-link--facebook" href="">Мы в Фейсбуке</a>
+            <a class="social-link  social-link--twitter" href="">Мы в Твиттере</a>
+          </div>
         </div>
+        <div class="copyright">Разработано <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></div>
       </div>
-      <div class="copyright">Разработано <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></div>
     </footer>
 
     <div class="modal modal--closed">
-      <h4 class="title title--center">Добавить в корзину</h3>
+      <h3 class="title title--center">Добавить в корзину</h3>
       <div class="size-form">
         <form action="https://echo.htmlacademy.ru/" method="post">
           <div class="size-form__legend">Выберите размер:</div>

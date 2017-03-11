@@ -1,0 +1,31 @@
+.page-header {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.page-header__container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.page-header__logo {
+  display: block;
+  width: 86px;
+  height: 79px;
+  margin: 0 auto;
+  line-height: 79px;
+
+  &:hover {
+    opacity: $opacity-hover;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}

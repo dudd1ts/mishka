@@ -1,0 +1,30 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 1.412;
+  text-align: left;
+  white-space: nowrap;
+  border-top: 1px solid $border-color;
+
+  a {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    padding: 28px 30px 28px;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+      opacity: $opacity-hover;
+    }
+
+    &:active {
+      opacity: $opacity-active;
+    }
+  }
+}

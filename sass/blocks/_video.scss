@@ -1,0 +1,15 @@
+.video {
+  position: relative;
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 100px;
+  height: 76px;
+  background: url("../img/icon-play.svg") no-repeat;
+  border: none;
+  transform: translate(-50%, -50%);
+}
