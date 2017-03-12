@@ -1,0 +1,15 @@
+.copyright {
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.copyright__link {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  vertical-align: middle;
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
+
+  @include hiding-text;
+}

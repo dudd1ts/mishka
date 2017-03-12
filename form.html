@@ -2,18 +2,22 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="">
-        <img src="http://placehold.it/86x35?text=mishka" width="86" height="35" alt="Интернет-магазин «Mishka»">
-      </a>
+      <div class="page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
+        </a>
+        <a class="btn-toggle  btn-toggle--close" href="">Главное меню</a>
+      </div>
       <nav class="main-nav main-nav--closed  main-nav--nojs">
-        <a class="main-nav__toggle" href="">Главное меню</a>
         <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active"><a href="">Каталог товаров</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
           <li class="main-nav__item  main-nav__item--search"><a href="">Поиск по сайту</a></li>
           <li class="main-nav__item  main-nav__item--basket"><a href="">Корзина: <span>пока пуста</span></a></li>
@@ -94,7 +98,7 @@
           </div>
         </fieldset>
         <fieldset class="form__filedset">
-          <legend class="form__legend"></legend>
+          <legend class="form__legend">Доп</legend>
           <div class="field-textarea">
             <textarea name="additional-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
