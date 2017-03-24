@@ -1,15 +1,29 @@
 .featured-product {
-  width: 320px;
-  margin: 0 auto 30px;
-  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.featured-product__container {
+  width: $mobile-container;
+  margin: 0 auto;
+}
+
+.featured-product__label {
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  color: $label-color;
+  text-transform: uppercase;
+}
+
+.featured-product__description {
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 .featured-product__specification {
   margin: 0;
   padding-bottom: 30px;
-  line-height: 1.3333;
-
-  @include clearfix();
+  line-height: 2rem;
 }
 
 .featured-product__specification dt,
@@ -28,6 +42,90 @@
   width: 63%;
 }
 
+.featured-product__img {
+  display: flex;
+  background-color: $background-color;
+}
+
+.featured-product__img img {
+  width: 100%;
+  margin: auto 0;
+}
+
 .featured-product__price {
   font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .featured-product__container {
+    width: $tablet-container;
+
+    @include clearfix();
+  }
+
+  .featured-product__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .featrued-product__title {
+    margin: 0;
+  }
+
+  .featured-product__label {
+    width: 120px;
+    text-align: center;
+  }
+
+  .featured-product__img {
+    float: right;
+    width: 333px;
+    height: 404px;
+  }
+
+  .featured-product__body {
+    display: flex;
+    flex-direction: column;
+    min-height: 404px;
+    margin-right: 376px;
+  }
+
+  .featured-product__order {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .featured-product__container {
+    position: relative;
+    width: $desktop-container;
+    min-height: 637px;
+  }
+
+  .featured-product__header {
+    justify-content: flex-start;
+    padding: 40px 0;
+  }
+
+  .featrued-product__title {
+    order: 2;
+  }
+
+  .featured-product__label {
+    width: 170px;
+  }
+
+  .featured-product__img {
+    width: 525px;
+    height: 636px;
+    margin-top: -147px;
+  }
+
+  .featured-product__body {
+    min-height: 490px;
+    margin-right: 583px;
+    padding-left: 175px;
+  }
 }

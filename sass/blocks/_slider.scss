@@ -1,0 +1,9 @@
+@media (min-width: $tablet-width) {
+  .slider__item {
+    width: 100%;
+  }
+  .slider__controls {
+    float: right;
+    margin-top: -40px;
+  }
+}

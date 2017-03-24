@@ -1,0 +1,30 @@
+.field-text label {
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+}
+
+.field-text input {
+  border: none;
+  border-bottom: 2px solid #000000;
+  width: 100%;
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .field-text label {
+    padding-right: 15px;
+    font-size: 1.9rem;
+  }
+
+  .field-text input {
+    width: 100%;
+    font-size: 1.9rem;
+  }
+}

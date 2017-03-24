@@ -1,6 +1,24 @@
 .modal {
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
+  padding: 45px 30px;
   text-align: center;
   background: #ffffff;
   border-top: 1px solid #c7c7c7;
+}
+
+.modal .title {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 568px;
+    border: 1px solid #c6c6c6;
+  }
+  .modal .title {
+    font-size: 3rem;
+    line-height: 5.7rem;
+  }
 }

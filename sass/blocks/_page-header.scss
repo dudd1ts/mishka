@@ -1,21 +1,15 @@
 .page-header {
+  position: relative;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
-}
-
-.page-header__container {
-  position: relative;
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
 }
 
 .page-header__logo {
   display: block;
   width: 86px;
-  height: 79px;
+  height: 78px;
   margin: 0 auto;
-  line-height: 79px;
+  padding: 24px 5px 20px;
 
   &:hover {
     opacity: $opacity-hover;
@@ -24,8 +18,34 @@
   &:active {
     opacity: $opacity-active;
   }
+}
 
-  img {
-    vertical-align: middle;
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: $tablet-container;
+    height: 90px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    flex-basis: 120px;
+    order: 1;
+    height: 88px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__container {
+    width: $desktop-container;
+  }
+
+  .page-header__logo {
+    flex-basis: 160px;
+    order: 2;
+    margin-left: auto;
+    text-align: center;
   }
 }

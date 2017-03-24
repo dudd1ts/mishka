@@ -1,7 +1,7 @@
 @import "variables";
-@import "fonts";
 @import "mixins";
 @import "normalize";
+@import "fonts";
 @import "global";
 
 @import "blocks/btn";
@@ -9,12 +9,11 @@
 @import "blocks/btn-prev";
 @import "blocks/btn-toggle";
 @import "blocks/contacts";
-@import "blocks/copiright";
+@import "blocks/copyright";
 @import "blocks/catalog";
-@import "blocks/email-links";
+@import "blocks/email-link";
 @import "blocks/featured-product";
 @import "blocks/features";
-@import "blocks/features-list";
 @import "blocks/field-checkbox";
 @import "blocks/field-email";
 @import "blocks/field-radio";
@@ -22,10 +21,8 @@
 @import "blocks/field-text";
 @import "blocks/field-textarea";
 @import "blocks/form";
-@import "blocks/label";
 @import "blocks/main-nav";
 @import "blocks/modal";
-@import "blocks/note";
 @import "blocks/page-footer";
 @import "blocks/page-header";
 @import "blocks/page-intro";
@@ -38,5 +35,6 @@
 @import "blocks/social-link";
 @import "blocks/social-links";
 @import "blocks/title";
+@import "blocks/user-items";
 @import "blocks/video";
 @import "blocks/video-card";
