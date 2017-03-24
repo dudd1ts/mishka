@@ -1,0 +1,14 @@
+
+.field-tel input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+}
+
+@media (min-width: $tablet-width) {
+  .field-tel input {
+    font-size: 1.9rem;
+  }
+}

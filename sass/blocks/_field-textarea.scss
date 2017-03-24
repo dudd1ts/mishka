@@ -1,0 +1,14 @@
+.field-textarea textarea {
+  display: block;
+  width: 100%;
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+  border: 2px solid #000000;
+  resize: vertical;
+}
+
+@media (min-width: $tablet-width) {
+  .field-textarea textarea {
+    font-size: 1.9rem;
+  }
+}

@@ -1,0 +1,11 @@
+.field-radio label {
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+}
+
+@media (min-width: $tablet-width) {
+  .field-radio label {
+    font-size: 1.9rem;
+  }
+}

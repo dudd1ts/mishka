@@ -1,0 +1,11 @@
+.field-checkbox label {
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+}
+
+@media (min-width: $tablet-width) {
+  .field-checkbox label {
+    font-size: 1.9rem;
+  }
+}

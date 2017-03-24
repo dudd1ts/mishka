@@ -1,5 +1,12 @@
 .video {
   position: relative;
+  display: flex;
+  background: $background-color;
+}
+
+.video img {
+  width: 100%;
+  margin: auto 0;
 }
 
 .video__play {

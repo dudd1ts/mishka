@@ -13,3 +13,9 @@
 
   @include hiding-text;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    border-top: none;
+  }
+}

@@ -10,9 +10,17 @@ $label-color:               $button-color;
 $border-color:              #ececec;
 $link-color:                #000000;
 
-$font-family:               "Open Sans", "Arial", sans-serif;
+$font-family:               "Open Sans", Arial, sans-serif;
 $font-size--root:           10px;
-$font-size:                 1.5rem;
+$font-size--mobile:         1.5rem;
+$font-size:                 1.7rem;
 
 $opacity-active:            0.3;
 $opacity-hover:             0.6;
+
+$tablet-width:              768px;
+$desktop-width:             1150px;
+
+$mobile-container:          260px;
+$tablet-container:          668px;
+$desktop-container:         1050px;
