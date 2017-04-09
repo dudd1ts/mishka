@@ -13,6 +13,7 @@ html {
 
 body {
   min-height: 100%;
+  margin: 0;
   font-size: $font-size--mobile;
   line-height: 1.6;
   font-family: $font-family;
@@ -31,8 +32,18 @@ img {
   border: 0;
 }
 
+svg,
+svg * {
+  fill: inherit;
+  stroke: inherit;
+}
+
 input {
   background-color: transparent;
+}
+
+::-webkit-input-placeholder {
+  opacity: $opacity-active;
 }
 
 @media (min-width: $tablet-width) {

@@ -2,12 +2,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .main-nav__item {
   font-weight: bold;
   font-size: 1.7rem;
-  line-height: 1.412;
+  line-height: 2.4rem;
   text-align: left;
   border-top: 1px solid $border-color;
 
@@ -20,8 +24,8 @@
     width: 320px;
     height: 100%;
     margin: 0 auto;
-    padding: 28px 30px 28px;
-    transition: opacity 0.15s ease;
+    padding: 26px 30px 28px 75px;
+    // transition: opacity 0.2s ease;
 
     &:hover {
       opacity: $opacity-hover;
@@ -35,10 +39,12 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     order: 3;
-    width: 50%;
+    width: 51%;
     border-top: 0;
   }
 
@@ -51,7 +57,7 @@
     a {
       width: 100%;
       margin: 0;
-      padding: 20px 0 20px;
+      padding: 17px 0;
     }
   }
 }
@@ -69,8 +75,16 @@
     line-height: 2.4rem;
     border-right: 1px solid #ececec;
 
+    &:first-child {
+      width: 44.1%;
+    }
+
+    &:nth-child(2) {
+      width: 55.9%;
+    }
+
     a {
-      padding: 28px 35px;
+      padding: 30px 35px 27px;
     }
 
     &:first-child a {
@@ -80,13 +94,13 @@
     &:nth-child(n+3) {
       display: block;
       height: auto;
-      margin-right: 50px;
+      margin-right: 62px;
       font-size: 1.5rem;
       line-height: 2.4rem;
       border-right: 0;
 
       a {
-        padding: 20px 0;
+        padding: 18px 0;
       }
     }
   }

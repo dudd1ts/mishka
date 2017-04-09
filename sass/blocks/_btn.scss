@@ -1,11 +1,46 @@
 .btn {
   display: block;
   padding: 14px;
-  font: bold 1.8rem/1.1111 "OpenSans", Arial, sans-serif;
+  font: bold 1.7rem/2rem "OpenSans", Arial, sans-serif;
   text-align: center;
   color: $base-color;
   text-transform: uppercase;
   text-decoration: none;
-  background: #ffffff;
+  letter-spacing: 0.07em;
+  background-color: #ffffff;
   border: 2px solid $base-color;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #ffffff;
+    background: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, .3);
+  }
+
+  &--green {
+    background-color: $inputs-color;
+    color: #ffffff;
+    border-color: transparent;
+
+    &:hover {
+      background: transparent;
+      color: $inputs-color;
+      border-color: $inputs-color;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, .3);
+    }
+  }
+}
+
+@media (max-width: ($tablet-width - 1)) {
+  .btn--order {
+    padding-top: 16px;
+    padding-bottom: 13px;
+    letter-spacing: 0.01em;
+  }
 }

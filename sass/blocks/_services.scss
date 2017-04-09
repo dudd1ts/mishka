@@ -1,20 +1,58 @@
 .services__item {
+  position: relative;
   display: block;
   width: 100%;
-  height: 103px;
-  padding: 25px 30px 0;
+  padding: 25px 30px 30px;
   font-weight: bold;
   font-size: 1.9rem;
   line-height: 2.4rem;
   color: #ffffff;
-  background-color: $button-color;
+  background-color: $inputs-color;
+  transition: margin-top 0.2s ease, padding-bottom 0.2s ease, color 0.2s ease;
+
+  svg {
+    position: absolute;
+    display: block;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+
+    fill: #149080;
+  }
+
+  &--furniture svg {
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+  }
 
   &--toys {
     background-color: #56c3b2;
+
+    svg {
+      top: 20px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 35px;
+
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    color: rgba(255,255,255,0.3);
+    svg {
+      opacity: 0.3;
+    }
   }
 }
-
-
 
 @media (min-width: $tablet-width) {
   .services {
@@ -24,5 +62,22 @@
   .services__item {
     font-size: 2rem;
     line-height: 3rem;
+    padding-top: 28px;
+    padding-left: 35px;
+
+    &--furniture svg {
+      top: 29px;
+    }
+
+    &--toys svg {
+      top: 31px;
+      right: 34px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .services__item {
+    padding-left: 37px;
   }
 }

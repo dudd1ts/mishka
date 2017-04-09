@@ -1,18 +1,14 @@
 .contacts {
-  margin-bottom: 50px;
+  margin-bottom: 39px;
 }
 
 .contacts__container {
   width: $mobile-container;
   margin: 0 auto;
 }
-
-.contacts__title {
-  font-size: 1.8rem;
-  line-height: 3rem;
-}
-
 .contacts__list {
+  padding-top: 16px;
+  padding-bottom: 7px;
   font-size: 1.5rem;
   line-height: 3rem;
   font-style: normal;
@@ -20,17 +16,18 @@
 
 .contacts__item {
   display: flex;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .contacts__type {
-  width: 75px;
+  width: 77px;
 }
 
-.contacts iframe {
+.contacts__map {
   display: block;
   width: 100%;
   max-width: 500px;
+  height: 455px;
   margin: 0 auto 39px;
   border: 0;
 }
@@ -41,25 +38,66 @@
   margin-left: auto;
 }
 
+@media (max-width: ($tablet-width - 1)) {
+  .contacts__title {
+    font-size: 1.8rem;
+  }
+
+  .contacts__type--address {
+    width: 81px;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 57px;
+  }
+
   .contacts__container {
     width: $tablet-container;
+  }
+
+  .contacts__title {
+    position: relative;
+    min-height: 81px;
+    padding-top: 15px;
+    text-indent: -5px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 57px;
+      height: 81px;
+      background: url("../img/icon-flag.svg") no-repeat 0 0;
+      background-size: 57px 81px;
+    }
   }
 
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 23px;
+    padding-bottom: 26px;
     font-size: 1.7rem;
     line-height: 3rem;
   }
 
   .contacts__item {
     width: 50%;
-    padding-right: 50px;
+    padding-right: 30px;
   }
 
-  .contacts iframe {
+  .contacts__map {
     max-width: none;
+    margin-bottom: 55px;
+  }
+
+  .contacts__write {
+    width: 230px;
   }
 }
 
@@ -69,6 +107,7 @@
     flex-wrap: wrap;
     width: $desktop-container;
     margin-right: auto;
+    margin-bottom: 105px;
     margin-left: auto;
   }
 
@@ -76,11 +115,19 @@
     width: 50%;
   }
 
-  .contacts .contacts__title {
+  .contacts__title {
+    margin-top: 55px;
     padding-left: 175px;
+
+    &::after {
+      top: 7px;
+      right: auto;
+      left: 58px;
+    }
   }
 
   .contacts__list {
+    padding-top: 30px;
     padding-left: 175px;
   }
 
@@ -89,7 +136,7 @@
     padding-right: 10px;
   }
 
-  .contacts iframe {
+  .contacts__map {
     width: 50%;
     margin-bottom: 0;
   }

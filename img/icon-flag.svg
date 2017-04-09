@@ -4,11 +4,11 @@
       <g id="slice" transform="translate(215.000000, 119.000000)">
       </g>
       <g id="editor-flag-triangle-notification-glyph">
-        <path fill="#63D1BB" d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
+        <path fill="#63D1BA" d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
       </g>
     </g>
   </g>
   <g>
-    <rect x="-11.34" y="-28.346" fill="#231F20" width="3.805" height="81.691"/>
+    <rect x="-11.34" y="-28.346" fill="#221F1F" width="3.805" height="81.691"/>
   </g>
 </svg>

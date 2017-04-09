@@ -1,12 +1,12 @@
 .page-intro {
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   background-color: $background-color;
 
   &--index {
     background-color: #f9f9f9;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50% -16%;
   }
 }
 
@@ -25,7 +25,7 @@
 
 .page-intro__title {
   margin: 0 auto;
-  padding: 75px 30px;
+  padding: 70px 30px 75px;
   font-weight: bold;
   font-size: 2.7rem;
   line-height: 3rem;
@@ -34,7 +34,7 @@
 }
 
 .page-intro--index .page-intro__title {
-  padding-bottom: 120px;
+  padding-bottom: 122px;
 }
 
 .page-intro__note {
@@ -42,33 +42,69 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-intro {
+    position: relative;
+    margin-bottom: 46px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      display: block;
+      width: 100%;
+      height: 13px;
+      background: url("../img/zigzag-fill.png") repeat-x;
+      background-size: 42px 13px;
+    }
+  }
+
   .page-intro__note {
     display: block;
     float: right;
     margin: 0;
-    padding: 20px 0;
+    padding: 17px 0;
     font-size: 1.5rem;
     line-height: 2.4rem;
     color: $text-color;
   }
 
   .page-intro__title {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 95px 50px 79px;
     font-size: 4.3rem;
     line-height: 5rem;
+    // text-indent: 9px;
+
+    br {
+      display: none;
+    }
   }
 
   .page-intro--index  .page-intro__title {
     max-width: 750px;
-    min-height: 625px;
-    padding-top: 160px;
+    min-height: 626px;
+    padding-top: 154px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-intro {
+    margin-bottom: 84px;
+
+    &::after {
+      bottom: -2px;
+      height: 18px;
+      background-size: auto;
+    }
+  }
+
   .page-intro__title {
+    padding-top: 94px;
+    padding-bottom: 102px;
     font-size: 5.3rem;
     line-height: 5.7rem;
+  }
+
+  .page-intro__note {
+    padding: 17px 0;
   }
 }

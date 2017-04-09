@@ -1,11 +1,82 @@
-.field-radio label {
-  font-weight: 700;
-  font-size: 1.7rem;
-  line-height: 1.8rem;
+.field-radio {
+  input {
+    display: none;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    min-height: 40px;
+    padding-top: 9px;
+    padding-bottom: 15px;
+    padding-left: 63px;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $base-color;
+      transition: all 0.2s ease;
+    }
+
+    &::after {
+      top: 12px;
+      left: 12px;
+      display: none;
+      width: 16px;
+      height: 16px;
+      background-color: #61d1ba;
+    }
+
+    &:hover::before {
+      border-color: #61d1ba;
+    }
+
+    &:active::before {
+      border-color: rgba(0, 0, 0, 0.3);
+      transition-duration: 0;
+    }
+  }
+
+  input:checked + label::after {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .field-radio label {
-    font-size: 1.9rem;
+  .field-radio {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    label {
+      padding-top: 15px;
+      padding-left: 80px;
+      font-size: 1.9rem;
+
+      &::before {
+        width: 52px;
+        height: 52px;
+      }
+
+      &::after {
+        top: 15px;
+        left: 15px;
+        width: 22px;
+        height: 22px;
+      }
+    }
   }
 }

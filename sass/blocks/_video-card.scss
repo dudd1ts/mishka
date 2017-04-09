@@ -3,19 +3,40 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 30px;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  }
 }
 
 .video-card__title {
   margin: 0;
-  padding: 25px 33px 25px 90px;
+  padding: 24px 33px 24px 90px;
   font-size: 1.7rem;
   line-height: 2.4rem;
   border: 1px solid $border-color;
   border-bottom: 0;
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 29px;
+    left: 33px;
+    width: 32px;
+    height: 32px;
+    background: url("../img/icon-video.svg") no-repeat 50% 50%;
+  }
 }
 
 .video-card__body {
-  padding: 33px 33px 32px;
+  padding: 26px 33px 33px;
   border: 1px solid $border-color;
   border-top: 0;
 }
@@ -30,15 +51,22 @@
 @media (min-width: $tablet-width) {
   .video-card__video {
     order: -1;
+    min-height: 455px; // NOTE: временно, до отзывчивых картинок
   }
   .video-card__title {
-    padding: 45px 40px 25px 105px;
+    padding: 38px 40px 30px 105px;
     font-size: 2rem;
+
+    &::after {
+      top: 33px;
+      left: 41px;
+    }
   }
 
   .video-card__description {
     padding: 0 0 36px;
     font-size: 1.5rem;
+    line-height: 3rem;
   }
 
   .video-card__body {
@@ -68,9 +96,14 @@
   .video-card__title {
     float: right;
     width: 367px;
-    padding: 95px 55px 40px 80px;
+    padding: 95px 55px 34px 80px;
     font-size: 2rem;
     border: 0;
+
+    &::after {
+      top: 42px;
+      left: 80px;
+    }
   }
 
   .video-card__body {
@@ -78,5 +111,9 @@
     margin-left: 682px;
     padding: 0 55px 45px 80px;
     border: 0;
+  }
+
+  .video-card__description {
+    padding-bottom: 46px;
   }
 }

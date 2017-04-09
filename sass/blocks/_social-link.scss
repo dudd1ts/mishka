@@ -1,9 +1,29 @@
 .social-link {
+  position: relative;
   display: inline-block;
   width: 40px;
   height: 40px;
+  margin: 0 8px;
   vertical-align: middle;
-  background-color: #000000;
 
-  @include hiding-text;
+  @include hiding-text();
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    transition: fill 0.2s ease;
+  }
+
+  &:hover {
+    svg {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
 }

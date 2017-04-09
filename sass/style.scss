@@ -4,9 +4,10 @@
 @import "fonts";
 @import "global";
 
+@import "blocks/title";
 @import "blocks/btn";
-@import "blocks/btn-next";
-@import "blocks/btn-prev";
+// @import "blocks/btn-next";
+// @import "blocks/btn-prev";
 @import "blocks/btn-toggle";
 @import "blocks/contacts";
 @import "blocks/copyright";
@@ -34,7 +35,6 @@
 @import "blocks/slider";
 @import "blocks/social-link";
 @import "blocks/social-links";
-@import "blocks/title";
 @import "blocks/user-items";
 @import "blocks/video";
 @import "blocks/video-card";

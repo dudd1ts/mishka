@@ -1,21 +1,36 @@
 .copyright {
-  padding: 10px 0;
+  padding: 19px 0 23px;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 3.4rem;
   text-align: center;
   border-top: 1px solid #e5e5e5;
-}
 
-.copyright__link {
-  display: inline-block;
-  width: 27px;
-  height: 34px;
-  vertical-align: middle;
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
+  svg {
+    margin-left: 22px;
+    vertical-align: middle;
+    transition: fill 0.2s ease;
 
-  @include hiding-text;
+    fill: #63d1bb;
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
+    margin-top: 10px;
+    padding: 0;
     border-top: none;
+
+    svg {
+      margin-left: 24px;
+    }
   }
 }

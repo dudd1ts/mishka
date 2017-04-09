@@ -3,11 +3,14 @@
   flex-direction: column;
   width: $mobile-container;
   margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog {
     width: $tablet-container;
+    padding-top: 34px;
   }
 }
 
@@ -17,5 +20,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: $desktop-container;
+    padding-top: 45px;
+    padding-bottom: 76px;
   }
 }

@@ -1,39 +1,98 @@
 .features {
   width: $mobile-container;
-  margin: 0 auto 10px;
-  color: #000000;
+  margin: 0 auto 26px;
+  font-weight: 700;
   font-size: 1.7rem;
   line-height: 2rem;
-  font-weight: 700;
+  color: #000000;
 }
 
 .features__list {
   margin: 0;
-  padding: 0;
+  padding: 21px 0 0;
   list-style: none;
 }
 
 .features__item {
+  position: relative;
   padding-top: 55px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  &--material::before {
+    left: 7px;
+    width: 34px;
+    height: 38px;
+    background-image: url("../img/icon-feature-1.svg");
+  }
+
+  &--style::before {
+    top: 2px;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-feature-3.svg");
+  }
+
+  &--likes::before {
+    top: 7px;
+    left: 7px;
+    width: 34px;
+    height: 28px;
+    background-image: url("../img/icon-feature-5.svg");
+  }
+
+  &--handmade::before {
+    top: 3px;
+    left: 3px;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icon-feature-2.svg");
+  }
+
+  &--domestic::before {
+    top: 5px;
+    left: -6px;
+    width: 54px;
+    height: 23px;
+    background-image: url("../img/icon-feature-4.svg");
+  }
+
+  &--pack::before {
+    top: 2px;
+    left: 3px;
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/icon-feature-6.svg");
+  }
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .features {
     width: $tablet-container;
     font-size: 2rem;
     line-height: 2.2rem;
+    // margin-bottom: 16px;
   }
 
   .features__list {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 37px;
   }
 
   .features__item {
     width: 50%;
     padding-right: 40px;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
   }
 
   .features__item--style {
@@ -55,13 +114,12 @@
   .features__item--pack {
     order: 6;
   }
-
-
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .features {
     width: $desktop-container;
+    padding-right: 175px;
     padding-left: 175px;
   }
 }

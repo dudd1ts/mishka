@@ -3,7 +3,7 @@
 }
 
 .form__intro {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   font-size: 1.3rem;
   line-height: 2.4rem;
 }
@@ -11,16 +11,32 @@
 .form__fieldset {
   width: $mobile-container;
   margin: 0 auto;
-  padding: 30px 0;
+  padding-bottom: 30px;
   border: none;
 
   &--submit {
     padding-top: 0;
   }
-}
 
-.form__fieldset input {
-  margin: 10px 0;
+  &--colors {
+    padding-bottom: 9px;
+  }
+
+  &--name {
+    padding-bottom: 13px;
+  }
+
+  &--tel {
+    padding-bottom: 32px;
+  }
+
+  &--mail {
+    padding-bottom: 32px;
+  }
+
+  &--additional {
+    padding-bottom: 16px;
+  }
 }
 
 .form__legend {
@@ -42,7 +58,7 @@
   width: 100%;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: ($tablet-width - 1)) {
   .form {
     width: $mobile-container;
     margin: 0 auto;
@@ -51,7 +67,11 @@
   .form__legend {
     position: relative;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+
+    &--small-gap {
+      margin-bottom: 9px;
+    }
 
     &::before {
       content: "";
@@ -75,9 +95,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    padding-top: 28px;
+  }
+
   .form__intro {
     width: $tablet-container;
     margin: 0 auto;
+    padding-bottom: 10px;
     font-size: 1.7rem;
     line-height: 3rem;
   }
@@ -90,18 +115,22 @@
     display: flex;
     align-items: baseline;
     width: $tablet-container;
+    padding: 35px 0;
 
     &--tel {
-      padding-bottom: 0;
+      padding-bottom: 22px;
     }
 
     &--mail {
       padding-top: 0;
+      padding-bottom: 50px;
     }
 
     &--submit {
       flex-direction: row-reverse;
       align-content: space-between;
+      padding-top: 0;
+      padding-bottom: 20px;
     }
   }
 
@@ -124,6 +153,7 @@
   }
 
   .form__note {
+    padding-bottom: 0;
     font-size: 1.7rem;
     line-height: 3rem;
   }
