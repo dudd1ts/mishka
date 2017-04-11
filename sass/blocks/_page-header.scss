@@ -9,7 +9,7 @@
   width: 86px;
   height: 78px;
   margin: 0 auto;
-  padding: 24px 0 20px;
+  padding: 21px 0 20px;
 
   &:hover {
     opacity: $opacity-hover;
@@ -17,11 +17,6 @@
 
   &:active {
     opacity: $opacity-active;
-  }
-
-  img {
-    margin-top: -3px;
-    margin-left: -1px;
   }
 }
 
@@ -51,6 +46,7 @@
     flex-basis: 160px;
     order: 2;
     margin-left: auto;
+    padding: 8px 0 0;
     text-align: center;
   }
 }

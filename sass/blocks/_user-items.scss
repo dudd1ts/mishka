@@ -13,7 +13,7 @@
   font-size: 1.7rem;
   line-height: 2.4rem;
   text-align: left;
-  border-top: 1px solid $inputs-color;
+  border-top: 1px solid $border-color;
 }
 
 .user-items__link {
@@ -46,18 +46,18 @@
   }
 }
 
- .user-items__icon-search,
- .user-items__icon-cart {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    display: block;
-    transform: translateY(-50%);
-    cursor: pointer;
-    opacity: 0.2;
+.user-items__icon-search,
+.user-items__icon-cart {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  display: block;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.2;
 
-    fill: #221f1f;
- }
+  fill: #221f1f;
+}
 
 .user-items__icon-search {
   width: 17.6px;

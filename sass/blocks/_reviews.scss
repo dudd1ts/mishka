@@ -50,6 +50,10 @@
     padding: 76px 50px 50px;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
     background-size: 350px 457px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__slider {

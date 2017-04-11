@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>document.createElement( "picture" );</script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__container">
         <a class="page-header__logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Mishka»">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Интернет-магазин «Mishka»">
+          </picture>
         </a>
         <a class="btn-toggle  btn-toggle--close" href="">Главное меню</a>
 
@@ -40,7 +46,13 @@
 
     <section class="catalog">
       <article class="product-card">
-        <a  class="product-card__photo-link" href=""><img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик"></a>
+        <a  class="product-card__photo-link" href="">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+          </picture>
+        </a>
         <div class="product-card__body">
           <h2 class="product-card__title"><a href="">Зайчик-попрыгайчик</a></h2>
           <div class="product-card__specification">Рост 30 см, вес 200 г</div>
@@ -53,7 +65,13 @@
         </div>
       </article>
       <article class="product-card">
-        <a class="product-card__photo-link" href=""><img src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья"></a>
+        <a class="product-card__photo-link" href="">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img src="img/photo-2-mobile@2x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
+          </picture>
+        </a>
         <div class="product-card__body">
           <h2 class="product-card__title"><a href="">Корзинка для белья</a></h2>
           <div class="product-card__specification">Диаметр 15 см, высота 10 см</div>
@@ -65,7 +83,13 @@
         </div>
       </article>
       <article class="product-card">
-        <a class="product-card__photo-link" href=""><img src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек"></a>
+        <a class="product-card__photo-link" href="">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img src="img/photo-3-mobile@2x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+          </picture>
+        </a>
         <div class="product-card__body">
           <h2 class="product-card__title"><a href="">Большая корзинка для игрушек</a></h2>
           <div class="product-card__specification">Диаметр 30 см, высота 30 см</div>
@@ -79,7 +103,11 @@
       <article class="video-card">
           <h2 class="video-card__title">Процесс производства</h2>
           <div class="video  video-card__video">
-            <img src="img/video-mobile@1x.jpg" alt="Вязаная корзинка">
+            <picture>
+              <source media="(min-width:1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@2x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Вязаная корзинка">
+            </picture>
             <button class="video__play" type="button"></button>
           </div>
           <div class="video-card__body">
