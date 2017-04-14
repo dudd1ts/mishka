@@ -85,7 +85,10 @@
     top: 50%;
     left: 50%;
     display: block;
-    transform: translate(-50%, -50%);
+    width: 21px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
     transition: fill 0.2s ease;
 
     fill: #cccccc;
