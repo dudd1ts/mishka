@@ -1,6 +1,7 @@
 .DS_Store
 .idea
 .csscomb.json
+.publish
 *.ai
 *.log
 *.pdf

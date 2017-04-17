@@ -16,6 +16,7 @@ const del = require("del");
 const imagemin = require("gulp-imagemin");
 const pngquant = require("imagemin-pngquant");
 const cheerio = require("gulp-cheerio");
+const ghPages = require('gulp-gh-pages');
 
 
 // ЗАДАЧА: Сборка стилей
@@ -125,6 +126,11 @@ gulp.task("serve", ["style"], function() {
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html", ["html:update"]);
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
 });
 
 // ЗАДАЧА: Задача по умолчанию
