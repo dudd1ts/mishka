@@ -8,6 +8,10 @@
   transition: border-color 0.2s ease;
   resize: vertical;
 
+  &:focus {
+    outline: none;
+  }
+
   &:hover,
   &:focus {
     border-color: $inputs-color;

@@ -22,11 +22,16 @@
     border-bottom: 2px solid #000000;
     transition: border-color 0.2s ease;
 
+    &:focus {
+      outline: none;
+    }
+
     &:hover,
     &:focus {
       border-bottom-color: $inputs-color;
 
-      & + svg {
+      & + svg,
+      & + svg use>svg {
         opacity: 1;
 
         fill: $inputs-color;
